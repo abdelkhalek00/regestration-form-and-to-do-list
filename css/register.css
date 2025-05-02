@@ -1,0 +1,74 @@
+body{
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+}
+aside button{
+    width: 90%;
+}
+main{
+    width: 85%;
+    /* background-color: darkseagreen; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .registerForm{
+    width: 70%;
+    /* height: 60%; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .registerForm .label{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        text-shadow:
+    0 0 10px darkseagreen,
+    0 0 20px darkseagreen,
+    0 0 40px darkseagreen,
+    0 0 80px darkseagreen;
+    }
+}
+main .registerForm .forma{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+
+    .invalidEmail{
+        color: red;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .invalidPassword{
+        color: red;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .invalidPhone{
+        color: red;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

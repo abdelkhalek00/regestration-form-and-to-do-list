@@ -1,0 +1,63 @@
+body{
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+aside{
+    width: 15%;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+aside button{
+    width: 90%;
+}
+main{
+    width: 85%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .loginForm{
+    width: 70%;
+    /* height: 60%; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .loginForm .label{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        text-shadow:
+    0 0 10px darkseagreen,
+    0 0 20px darkseagreen,
+    0 0 40px darkseagreen,
+    0 0 80px darkseagreen;
+    }
+}
+main .loginForm .form{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+
+    .invalidMessage{
+        color: red;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

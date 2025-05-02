@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docket</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home1.css">
+</head>
+<body>
+    <aside>
+        <div class="container">
+            <h2 class="py-3">Docket</h2>
+            <div class="asideBtn">
+                <a href="index.html"><button class="btn btn-dark mb-3">Back home</button></a>
+                <a href="register.html"><button class="btn btn-dark Logout">Logout</button></a>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="container py-4">
+            <input type="text" id="searchInput" placeholder="search by title" class="form-control w-25 mb-5" oninput="searchComments();">
+            <h2 class="fs-2">Notes</h2>
+            <div class="notesBox py-3" id="notesBox">
+                <div class="position-absolute start-50 top-50 translate-middle">
+                    <h3 class="w-100 text-center fw-bold">No Notes Found</h3>
+                    <p class="text-secondary">create a row note to get started</p>
+                </div>
+
+                <!-- <div class="commentBox p-2" id="commentBox">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, itaque.</p>
+                    <button class="commentBoxExit" id="commentBoxExit">x</button>
+                    <button class="updateNote btn btn-warning" id="updateNote" onclick="update();">update</button>
+                </div> -->
+                
+            </div>
+            <div class="addNoteWindow py-3 px-2 shadow shadow-lg d-none" id="noteWindow">
+                <h2 class="text-center mb-3">Add new note</h2>
+                <label for="commentTitle">Title</label>
+                <input type="text" id="commentTitle" class="form-control mb-2">
+                
+                <label for="commentContent">Content</label>
+                <textarea id="commentContent" class="form-control" rows="4" placeholder="Write something"></textarea>
+                <label for=""></label>
+                
+                <button id="addNote" class="btn-success btn" onclick="addNote();">Add note</button>
+                <button id="confirmUpdate" class="btn-warning btn d-none" onclick="confirmUpdate();">confirm update</button>
+                <button id="noteWindowExit" onclick="closeAddCommentWindow();">x</button>
+                
+            </div>
+            <button class="plusNote" onclick="openAddCommentWindow();">+</button>
+        </div>
+    </main>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home1.js"></script>
+</body>
+</html>

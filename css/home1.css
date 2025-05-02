@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(163, 199, 163);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+aside{
+    width: 15%;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    
+}
+aside .container{
+    position:relative;
+    height: 100%;
+}
+.Logout{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+aside button{
+    width: 90%;
+}
+main{
+    width: 85%;
+    /* background-color: green; */
+    height: 100vh;
+    position: relative;
+}
+main .container{
+    width: 90%;
+    /* background-color: yellow; */
+    height: 100%;
+}
+.notesBox{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    .commentBox{
+        width: 19%;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px gray;
+        position: relative;
+        overflow: auto;
+
+    }
+    #commentBoxExit{
+        width: 25px;
+        height: 25px;
+        background-color: black;
+        color: white;
+        font-weight: 900;
+        border-radius: 50%;
+        position: absolute;
+        border: 0;
+        top: 2%;
+        right: 2%;
+        transition-duration: .2s;
+    }
+    #commentBoxExit:hover{
+        background-color: red;
+        transform: scale(1.1);
+    }
+
+    #updateNote{
+        border: 0;
+        border-radius: 10px;
+        position: absolute;
+        text-align: right;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.addNoteWindow{
+    width: 45%;
+    height: 60%;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+textarea{
+    resize: none;
+}
+#noteWindowExit{
+    width: 30px;
+    height: 30px;
+    font-weight: 900;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(216, 216, 216, 0.35);
+    top: 1%;
+    right: 1%;
+    transition-duration: .2s;
+}
+#noteWindowExit:hover{
+    background-color: rgba(173, 173, 173, 0.671);
+    transform: scale(1.1);
+}
+#addNote{
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+#confirmUpdate{
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+.plusNote{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 20;
+    bottom: 10%;
+    right: 5%;
+}
